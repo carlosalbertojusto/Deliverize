@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  position: fixed;
   width: 100vw;
   height: 8rem;
   padding: 1.6rem 4rem;
@@ -12,7 +11,12 @@ export const Container = styled.div`
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_200};
   box-shadow: 0px 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
-  margin-bottom: 2.4rem;
+  @media (max-width: 1180px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 `
 
 export const Wrapper = styled.div`
@@ -22,6 +26,9 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2.4rem;
+  @media (max-width: 1180px) {
+    display: none;
+  }
 `
 
 export const IconLogoWrapper = styled.div`

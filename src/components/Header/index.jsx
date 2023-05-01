@@ -43,7 +43,7 @@ export function Header() {
         <ShoppingCart>
           <div className="wrapperShoppingCart">
             <MdOutlineShoppingCart />
-            <span>0</span>
+            <span>1</span>
           </div>
           <p>Carrinho</p>
         </ShoppingCart>
