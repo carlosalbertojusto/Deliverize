@@ -8,7 +8,6 @@ export const Container = styled.div`
   align-items: center;
   gap: 0.4rem;
 
-
   background: ${({ theme }) => theme.COLORS.BACKGROUND};
   box-shadow: 0rem 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   border-radius: 0.4rem;
@@ -17,6 +16,10 @@ export const Container = styled.div`
     width: 2.4rem;
     height: 2.4rem;
     fill: ${({ theme }) => theme.COLORS.RED_100};
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 `
 

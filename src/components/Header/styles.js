@@ -37,6 +37,10 @@ export const IconLogoWrapper = styled.div`
 
   display: flex;
   align-items: center;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 `
 
 export const Search = styled.div`
@@ -54,11 +58,19 @@ export const Login = styled.div`
     font-weight: 400;
     line-height: 1.7rem;
     color: ${({ theme }) => theme.COLORS.RED_300};
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 
   svg {
     font-size: 2.4rem;
     fill: ${({ theme }) => theme.COLORS.RED_300};
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 `
 
@@ -95,6 +107,10 @@ export const ShoppingCart = styled.div`
     svg {
       font-size: 2.4rem;
       fill: ${({ theme }) => theme.COLORS.RED_300};
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -103,5 +119,9 @@ export const ShoppingCart = styled.div`
     font-weight: 400;
     line-height: 1.7rem;
     color: ${({ theme }) => theme.COLORS.RED_300};
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 `
